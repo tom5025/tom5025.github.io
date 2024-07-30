@@ -11,6 +11,8 @@
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
   <AppDomains>
     <AppDomain>https://www.contoso.com</AppDomain>
+    <AppDomain>https://localhost:3001</AppDomain>
+    <AppDomain>https://www.dpalynn.com/</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Document"/>
@@ -74,7 +76,7 @@
       <bt:ShortStrings>
         <bt:String id="GetStarted.Title" DefaultValue="Get started with DPALynn!"/>
         <bt:String id="CommandsGroup.Label" DefaultValue="Commands Group"/>
-        <bt:String id="TaskpaneButton.Label" DefaultValue="DPALynn document analysis"/>
+        <bt:String id="TaskpaneButton.Label" DefaultValue="DPALynn document analysis (dev)"/>
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="GetStarted.Description" DefaultValue="DPALynn addin loaded succesfully. Go to the HOME tab and click the 'DPALynn' button to get started."/>
