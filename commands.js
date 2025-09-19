@@ -92,7 +92,7 @@ Office.actions.associate("action", function(eventArgs) {
                 console.warn("⚠ No matching Excel or PDF attachment found.");
                 
                 Office.context.ui.displayDialogAsync(
-                    "https://tom5025.github.io/commands.html",
+                    "https://colift.de/mailchecker/commands.html",
                     {
                         height: 40,
                         width: 30,
