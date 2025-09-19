@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0" xsi:type="MailApp">
-  <Id>7635f13a-293b-438a-b931-b176a85bb76b</Id>
-  <Version>1.0.0.0</Version>
+  <Id>7635f13a-293b-438a-b931-b176a85bb76c</Id>
+  <Version>1.0.0.1</Version>
   <ProviderName>Contoso</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="FileNameChecker"/>
@@ -10,7 +10,7 @@
   <HighResolutionIconUrl DefaultValue="https://colift.de/mailchecker/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://colift.de/"/>
   <AppDomains>
-    <AppDomain>http://localhost:8080</AppDomain>
+    <AppDomain>https://tom5025.github.io</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Mailbox"/>
@@ -23,7 +23,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="http://localhost:8080/taskpane.html"/>
+        <SourceLocation DefaultValue="https://tom5025.github.io/taskpane.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -57,7 +57,7 @@
     
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Commands.Url" DefaultValue="https://colift.de/mailchecker/commands.html"/>
+        <bt:Url id="Commands.Url" DefaultValue="https://tom5025.github.com/commands.html"/>
       </bt:Urls>
       <bt:ShortStrings>
 
