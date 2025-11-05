@@ -91,8 +91,8 @@ Office.actions.associate("action", function(eventArgs) {
 
                                 if (messageArgs.message === "confirmed") {
                                     console.log("✅ User confirmed to send anyway.");
-                                    // Continue with attachment validation
-                                    checkAttachments();
+                                    // Continue with attachment validation      
+                                    eventArgs.completed({ allowEvent: true });                              
                                 } else {
                                     console.log("❌ User cancelled. Blocking email.");
                                     eventArgs.completed({ allowEvent: false });
@@ -104,6 +104,7 @@ Office.actions.associate("action", function(eventArgs) {
                 }
 
                 console.log("✅ Code from subject line found in body.");
+                eventArgs.completed({ allowEvent: true });
             }            
         });        
     });
