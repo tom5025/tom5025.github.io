@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0" xsi:type="MailApp">
+  <Id>34eb2a85-dfe6-44e5-9b42-a195a8b346eb</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Colift</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Check zoom project code"/>
+  <Description DefaultValue="Checks, for emails with zoom links, if a project code is in the subject line and body of an email."/>
+  <IconUrl DefaultValue="https://colift.de/mailchecker/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://colift.de/mailchecker/assets/icon-128.png"/>
+  <SupportUrl DefaultValue="https://colift.de/"/>
+  <AppDomains>
+    <AppDomain>https://tom5025.github.io</AppDomain>    
+  </AppDomains>
+  <Hosts>
+    <Host Name="Mailbox"/>
+  </Hosts>
+  <Requirements>
+    <Sets>
+      <Set Name="Mailbox" MinVersion="1.1"/>
+    </Sets>
+  </Requirements>
+  <FormSettings>
+    <Form xsi:type="ItemRead">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://tom5025.github.io/taskpane.html"/>
+        <RequestedHeight>250</RequestedHeight>
+      </DesktopSettings>
+    </Form>
+  </FormSettings>
+  <Permissions>ReadWriteItem</Permissions>
+  <Rule xsi:type="RuleCollection" Mode="Or">
+    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read"/>
+  </Rule>
+  <DisableEntityHighlighting>false</DisableEntityHighlighting>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides" xsi:type="VersionOverridesV1_0">
+      <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides/1.1" xsi:type="VersionOverridesV1_1">
+
+    <Requirements>
+      <bt:Sets DefaultMinVersion="1.8">
+        <bt:Set Name="Mailbox"/>
+      </bt:Sets>
+    </Requirements>
+    <Hosts>
+      <Host xsi:type="MailHost">
+        <DesktopFormFactor>
+          <FunctionFile resid="Commands.Url"/>
+        
+          <ExtensionPoint xsi:type="Events">
+                <Event Type="ItemSend" FunctionExecution="synchronous" FunctionName="action" />
+            </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+    <Resources>
+      <bt:Images>
+    
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="Commands.Url" DefaultValue="https://tom5025.github.io/commands.html"/>
+      </bt:Urls>
+      <bt:ShortStrings>
+
+      </bt:ShortStrings>
+      <bt:LongStrings>
+  
+      </bt:LongStrings>
+    </Resources>
+  </VersionOverrides>
+    </VersionOverrides>
+
+</OfficeApp>
