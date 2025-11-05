@@ -69,8 +69,8 @@ Office.actions.associate("action", function(eventArgs) {
 
                     // Show error dialog - code not found in body
                     Office.context.ui.displayDialogAsync(
-                        //"http:s//colift.de/mailchecker/commands.html",
-                        "http://localhost:3000/commands.html",
+                        //"https//colift.de/mailchecker/commands.html",
+                        "https://tom5025.github.io/commands.html",
                         {
                             height: 40,
                             width: 30,
